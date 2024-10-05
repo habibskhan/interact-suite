@@ -1,0 +1,281 @@
+@import "../../styles/common.scss";
+
+.cardbox_sec {
+  .cardbox_row {
+    padding-top: 0.8125em;
+    margin: 0 auto;
+    // column-gap: 2.5em;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 2em;
+    .cardbox_col {
+      padding: 0;
+      margin-top: 5.1875em;
+      max-width: 23.4%;
+    }
+    .box {
+      border: 1px solid #18181866;
+      border-radius: 2.5em;
+      backdrop-filter: blur(13px);
+      -webkit-backdrop-filter: blur(13px);
+      padding: 5.25em 1.25em 3.0625em;
+      position: relative;
+      height: 100%;
+      min-height: 16.5625em;
+
+      .img_wrapper {
+        background: linear-gradient(221deg, #ff7527, #0119af);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 5.5625em;
+        height: 5.5625em;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+      }
+      .card_img {
+        max-width: 3em;
+      }
+      .numb {
+        color: $color-FFFFFF;
+        font-size: 3.875em;
+        font-weight: 300;
+        letter-spacing: 0px;
+        line-height: 1.3549;
+      }
+      .card_text {
+        color: $color-181818;
+        font-size: 1.375em;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 1.5455;
+        text-align: center;
+      }
+    }
+  }
+
+  #box1 {
+    animation: showbox1 20s infinite;
+  }
+  #box2 {
+    animation: showbox2 20s infinite;
+  }
+  #box3 {
+    animation: showbox3 20s infinite;
+  }
+  #box4 {
+    animation: showbox4 20s infinite;
+  }
+  #box5 {
+    animation: showbox5 20s infinite;
+  }
+  #box6 {
+    animation: showbox6 20s infinite;
+  }
+  #box7 {
+    animation: showbox7 20s infinite;
+  }
+  #box8 {
+    animation: showbox8 20s infinite;
+  }
+
+  @keyframes showbox1 {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showbox2 {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showbox3 {
+    0% {
+      opacity: 0;
+    }
+    8% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showbox4 {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showbox5 {
+    0% {
+      opacity: 0;
+    }
+    12% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showbox6 {
+    0% {
+      opacity: 0;
+    }
+    14% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showbox7 {
+    0% {
+      opacity: 0;
+    }
+    16% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes showbox8 {
+    0% {
+      opacity: 0;
+    }
+    18% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  .cardbox_sec {
+    .cardbox_row {
+      column-gap: 3.2em;
+
+      .cardbox_col {
+        max-width: 23%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .cardbox_sec {
+    .cardbox_row {
+      column-gap: 2.5em;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .cardbox_sec {
+    .cardbox_row {
+      column-gap: 2.2em;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .cardbox_sec {
+    .cardbox_col {
+      max-width: 100%;
+      flex: 0 0 31%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .cardbox_sec {
+    .cardbox_row {
+      .cardbox_col {
+        max-width: 31%;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cardbox_sec {
+    .cardbox_row {
+      column-gap: 0;
+      padding-top: 0.6em;
+      .cardbox_col {
+        margin-top: 4.4em;
+        max-width: 100%;
+        &:nth-child(2n + 1) {
+          padding-right: 0.75em;
+        }
+        &:nth-child(2n + 2) {
+          padding-left: 0.75em;
+        }
+      }
+      .box {
+        border-radius: 2em;
+        padding: 3.9em 2em 2em;
+        .card_text {
+          font-size: 1.4em;
+          letter-spacing: 0px;
+          line-height: 1.4285;
+          br {
+            display: none;
+          }
+        }
+        .img_wrapper {
+          max-width: 5.7em;
+          height: 5.7em;
+        }
+        .card_img {
+          max-width: 3em;
+        }
+      }
+    }
+  }
+}

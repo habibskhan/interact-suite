@@ -1,0 +1,77 @@
+@import '../../../../styles/common.scss';
+
+.commModel_tab_section {
+  .tab_row {
+    margin: 0 auto;
+  }
+  .tab_col {
+    padding: 0;
+  }
+
+  .tab_wrapper {
+    background-color: #efefef;
+    padding: 2.5em 3em;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    cursor: pointer;
+    &.active {
+      background: transparent linear-gradient(228deg, #ff8000, #0119af);
+      transition: 0.5s ease;
+    }
+
+    .arrow {
+      display: block;
+      margin-left: auto;
+      width: 100%;
+      max-width: 2.9825em;
+      transition: 0.5s ease;
+      &.active {
+        transition: 0.5s ease;
+        transform: rotate(45deg);
+      }
+    }
+
+    .tab_title {
+      color: #181818;
+      font-size: 3em;
+      width: 60%;
+      font-weight: 200;
+      letter-spacing: 0px;
+      transition: 0.3s ease;
+      &.active {
+        color: #ffffff;
+        transition: 0.3s ease;
+      }
+
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .commModel_tab_section .tab_wrapper {
+    padding: 3em;
+
+    .tab_title {
+      font-size: 2em;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .commModel_tab_section {
+    .tab_wrapper {
+      align-items: flex-start;
+    .arrow {
+      max-width: 2.27em;
+      margin-left: 1em;
+    }
+  }
+  }
+}
