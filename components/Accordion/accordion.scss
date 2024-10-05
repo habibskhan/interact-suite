@@ -1,0 +1,103 @@
+@import "../../styles/common.scss";
+
+.accordion-wrapper {
+  padding: 0;
+  transition: all 0.35s ease-in;
+  padding: 3.125em 0;
+  border-bottom: 1px solid rgba($color: $color-181818, $alpha: 0.2);
+
+  &:first-child {
+    padding: 0 0 3.125em;
+  }
+
+  &:last-child {
+    padding: 3.125em 0 0;
+    border: none;
+  }
+}
+
+
+
+.accordion-wrapper.active {
+  padding: 3.125em 0 2.5em;
+
+  &:first-child {
+    padding: 0 0 2.5em;
+  }
+
+  &:last-child {
+    padding: 3.125em 0 0;
+  }
+}
+
+
+
+.accordion-item {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-item.active {
+  transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 9999px;
+}
+
+.accordion-title {
+  @include textStyles(2em, 1.797em, 0);
+  color: $color-181818;
+  font-weight: 500;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  .plus-minus {
+    display: block;
+    width: 100%;
+    max-width: 0.844em;
+  }
+}
+
+.accordion-content {
+  @include textStyles(1.5em, 1.5em, 0);
+  padding: 1.333em 0 0;
+  color: $color-181818;
+  font-weight: 300;
+
+  ul {
+    padding: 0 0 0 1em;
+
+    li {
+      list-style-type: disc;
+
+      &::marker {
+        font-size: 0.75em;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .accordion-content {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 600px) {
+  .accordion-title {
+    font-size: 1.6em;
+  }
+
+  .accordion-content {
+    font-size: 1.6em;
+
+    ul li {
+      &::marker {
+        font-size: 1em;
+      }
+    }
+  }
+}

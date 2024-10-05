@@ -1,0 +1,101 @@
+.customer-doc {
+  .heading {
+    text-align: center;
+    .heading_container {
+      max-width: 61.5em;
+      margin: 0 auto;
+    }
+
+    p {
+      max-width: calc(100vw - 12em);
+      font-size: 2em;
+      margin: 1em auto 2.75em;
+      line-height: 1.5;
+    }
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    .benefit {
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .title-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: rgba(255, 255, 255, 0.562);
+        font-size: 3em;
+      }
+    }
+
+    // First row: 2 items, each spanning 3 of the 6 columns
+    .benefit:nth-child(1),
+    .benefit:nth-child(2) {
+      grid-column: span 3;
+    }
+
+    // Second row: 3 items, each spanning 2 of the 6 columns
+    .benefit:nth-child(3),
+    .benefit:nth-child(4),
+    .benefit:nth-child(5) {
+      grid-column: span 2;
+    }
+  }
+}
+
+// @media (max-width: 1024px) {
+//   .customer-doc {
+//     .heading {
+//       p {
+//         padding-inline: 5em;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 768px) {
+  .customer-doc {
+    text-align: left;
+
+    .heading {
+      padding: 0 2em;
+      margin: 0em auto;
+
+      .my_container {
+        padding: 0;
+      }
+
+      p {
+        text-align: left;
+        padding-inline: 2em;
+        max-width: 100%;
+      }
+    }
+
+    .benefits {
+      grid-template-columns: 1fr;
+
+      .benefit {
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 431px) {
+  .customer-doc {
+    .heading {
+      p {
+        padding-inline: 0em;
+      }
+    }
+  }
+}

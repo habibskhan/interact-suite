@@ -1,0 +1,104 @@
+@import "../../styles/common.scss";
+
+.comm_cta_sec1 {
+  .cta_link {
+    border: 1px solid #181818;
+    border-radius: 50px;
+    background: #ffffff;
+    font-size: 1.375em;
+    font-weight: 400;
+    color: #181818;
+    letter-spacing: 0px;
+    line-height: normal;
+    padding: 0.782em 1.3637em;
+    // min-width: 13.9091em;
+    width: 100%;
+    max-width: fit-content;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    &::before {
+      content: "";
+      border-radius: 50px;
+      background: linear-gradient(230deg, #ff8000, #0119af);
+      width: 0;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: 0.3s ease;
+      // z-index: 1;
+    }
+    &:hover {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      transition: 0.3s ease;
+      &::before {
+        width: 100%;
+        transition: 0.3s ease;
+      }
+      .white_right_arrow {
+        display: none;
+        transition: 0.3s ease;
+      }
+      .orange_right_arrow {
+        display: inline-block;
+        transition: 0.3s ease;
+      }
+    }
+
+    .cta_text {
+      display: inline-block;
+      position: relative;
+    }
+  }
+  .orange_right_arrow,
+  .white_right_arrow {
+    background: linear-gradient(to right, #ff8000, #0119af);
+    border-radius: 50%;
+    width: 100%;
+    // max-width: 0.8182em;
+    max-width: 1.7273em;
+    height: 1.7273em;
+    padding: 0.4546em;
+    margin-left: 1em;
+    transition: 0.3s ease;
+  }
+
+  .white_right_arrow {
+    transform: rotate(-45deg);
+  }
+
+  .orange_right_arrow {
+    background: #ffffff;
+    transform: rotate(0deg);
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .comm_cta_sec1 {
+    text-align: center;
+    .cta_link {
+      border-radius: 50px;
+      font-size: 1.4em;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: normal;
+      padding: 0.474em 1em;
+      // min-width: 13.2143em;
+      transition: 0.3s ease;
+    }
+    .orange_right_arrow,
+    .white_right_arrow {
+      max-width: 1.8em;
+      height: 1.8em;
+      margin-left: 0.75em;
+    }
+  }
+}

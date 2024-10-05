@@ -1,0 +1,129 @@
+@import "../../styles/common.scss";
+
+.across_ind {
+  position: relative;
+  .across_row {
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0.55125em 0 0;
+    .across_col {
+      padding: 0;
+      margin-top: 3.5em;
+    }
+    .data_box {
+      position: relative;
+      .circle_icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 100%;
+      }
+      .icon_wrapper {
+        border-radius: 50%;
+        width: 100%;
+        max-width: 9.422em;
+        // height: 9.422em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        // &::before {
+        //   content: "";
+        //   position: absolute;
+        //   top: 50%;
+        //   left: 50%;
+        //   transform: translate(-50%, -50%);
+        //   background-color: rgba(255, 255, 255, 0.1);
+        //   -webkit-backdrop-filter: blur(20px);
+        //   backdrop-filter: blur(20px);
+        //   border-radius: 50%;
+        //   width: 6.75em;
+        //   height: 6.75em;
+        //   z-index: -1;
+        // }
+        // .icon {
+        //   max-width: 5.375em;
+        // }
+        .icon_video {
+          width: 100%;
+          max-width: 100%;
+          border-radius: 50%;
+        }
+      }
+      .desc {
+        color: #ffffff;
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0px;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 0.2em;
+        padding: 0 0.75em;
+      }
+    }
+  }
+}
+
+// @media (max-width: 1700px) {
+//   .across_ind {
+//     .across_row {
+//       .data_box {
+//         .icon_wrapper {
+//           .icon {
+//             max-width: 4em;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 991px) {
+  .across_ind {
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+    .across_row {
+      width: 100em;
+      justify-content: flex-start;
+    }
+    .my_container {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .across_ind {
+    .across_row {
+      width: 80em;
+      padding-top: 1.753em;
+    .across_col {
+      margin-top: 2.269em;
+    }
+      .data_box {
+        .icon_wrapper {
+          max-width: 10.15em;
+          // height: 10.15em;
+          .icon {
+            max-width: 4.9em;
+          }
+        }
+        .desc {
+          font-size: 1.4em;
+          letter-spacing: 0px;
+          line-height: 1.4285;
+          padding: 0 1.5em;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

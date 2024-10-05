@@ -1,0 +1,426 @@
+.personalisedCommunication {
+  // background: linear-gradient(
+  //   180deg,
+  //   #001596 0%,
+  //   #091669 21%,
+  //   #0d1756 71%,
+  //   #001596 100%
+  // );
+  position: relative;
+  color: white;
+  padding: 6.75em 7.5em 9.375em;
+  .comm_bg {
+    height: 100%;
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .section_heading {
+    color: white;
+    margin-bottom: 1.15152em;
+  }
+
+  .interactDxContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 7.1875em;
+    padding: 0 15em;
+
+    .upload_container {
+      display: flex;
+      align-items: flex-end;
+
+      .left_arrow,
+      .right_arrow {
+        width: 100%;
+        max-width: 4em;
+        margin: 0 0 1.2em 1.9025em;
+      }
+
+      .right_arrow {
+        margin: 0 1.9025em 1.2em 0;
+      }
+
+      .uploadBox {
+        color: #ffffff;
+        font-weight: 400;
+        background-color: #00117c;
+        padding: 0.5em 1em;
+        text-align: center;
+        width: 100%;
+        max-width: 13.125em;
+        min-height: 6.3334em;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .interactDxBox {
+    background: linear-gradient(211deg, #ff8000, #0119af);
+    padding: 1em;
+    padding: 0.1771em 0.696em;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.4167;
+    position: relative;
+    &::before {
+      background-image: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0%);
+      background-position: 100%;
+      background-repeat: repeat-y;
+      background-size: 1px 10px;
+      content: "";
+      height: 4.35em;
+      left: 50%;
+      position: absolute;
+      top: 113%;
+      transform: translateX(-50%);
+      width: 1px;
+    }
+  }
+
+  .interactDxBox-mobo {
+    display: none;
+  }
+
+  .stepsContainer {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+
+  .dataBox {
+    width: 100%;
+    // max-width: 19em;
+    max-width: (100% / 4);
+    text-align: center;
+    overflow: hidden;
+    &:first-child {
+      .imgWrapper {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &:last-child {
+      .imgWrapper {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .section_desc {
+      width: 100%;
+      max-width: 13.959em;
+      margin: 0 auto;
+    }
+
+    .imgWrapper {
+      width: 100%;
+      max-width: 14.125em;
+      position: relative;
+      margin: 0 auto;
+      &::after,
+      &::before {
+        content: "";
+        background-image: linear-gradient(
+          to right,
+          #ffffff 50%,
+          rgba(255, 255, 255, 0) 0%
+        );
+        background-position: bottom;
+        background-size: 10px 1px;
+        background-repeat: repeat-x;
+        width: 100%;
+        max-width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 105%;
+        bottom: 50%;
+      }
+      &::after {
+        left: initial;
+        right: 105%;
+      }
+    }
+  }
+
+  .blueCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .orangeCircle {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .circleText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    img {
+      max-width: 5.125em;
+    }
+  }
+
+  .contentWrapper {
+    margin-top: 1em;
+    .section_desc {
+      color: #ffffff;
+    }
+  }
+
+  // .desc {
+  //   color: #ffffff;
+  //   font-size: 1.375em;
+  //   font-weight: 400;
+  //   letter-spacing: 0px;
+  //   line-height: 1.5454;
+  //   margin: 0 10px;
+  // }
+}
+
+@media (max-width: 1194px) {
+  .personalisedCommunication {
+    padding: 6.75em 3em 9.375em;
+    .interactDxContainer {
+      padding: 0 7em;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .personalisedCommunication {
+    padding: 5em 4em;
+
+    .interactDxContainer {
+      justify-content: space-between;
+    }
+
+    // .dataBox {
+    //   max-width: 15em;
+    // }
+  }
+}
+
+@media (min-width: 1440px) {
+  .imgWrapper {
+    max-width: 18.1707em;
+  }
+}
+
+@media (max-width: 991px) {
+  .personalisedCommunication {
+    .interactDxBox {
+      display: none;
+    }
+
+    .interactDxBox-mobo {
+      margin-top: 4em;
+      background: linear-gradient(45deg, #0000ff, #ffa500);
+      padding-inline: 1em;
+      width: 10em;
+      height: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 6em auto 4em;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 2em;
+      position: relative;
+      &::before {
+        background-image: linear-gradient(
+          #ffffff 50%,
+          rgba(255, 255, 255, 0) 0%
+        );
+        background-position: 100%;
+        background-repeat: repeat-y;
+        background-size: 1px 10px;
+        content: "";
+        height: 3.5em;
+        left: 50%;
+        position: absolute;
+        top: 113%;
+        transform: translateX(-50%);
+        width: 1px;
+      }
+
+      .left {
+        position: absolute;
+        right: -1em;
+        bottom: 5em;
+        rotate: 110deg;
+      }
+
+      .right {
+        position: absolute;
+        left: -1em;
+        bottom: 5em;
+        rotate: -110deg;
+      }
+    }
+
+    .interactDxContainer {
+      .upload_container {
+        .right_arrow,
+        .left_arrow {
+          display: none;
+        }
+      }
+    }
+
+    .dataBox {
+      max-width: 50%;
+      // .personalisedCommunication .dataBox .imgWrapper::after,
+      .imgWrapper {
+        margin-top: 4.4em;
+        &::before {
+          bottom: auto;
+          display: none;
+          left: 50%;
+          max-width: none;
+          top: -4.3em;
+          width: 160.5%;
+        }
+
+        &::after {
+          background-image: linear-gradient(#fff 50%, #fff0 0);
+          background-position: 100%;
+          background-repeat: repeat-y;
+          background-size: 1px 10px;
+          bottom: 103%;
+          height: 19.75vh;
+          right: 50%;
+        }
+      }
+      &:first-child {
+        .imgWrapper {
+          &::after {
+            display: block;
+          }
+        }
+      }
+      &:nth-child(2n + 1) {
+        .imgWrapper {
+          &::after {
+            background-image: linear-gradient(#fff 50%, #fff0 0);
+            background-position: 100%;
+            background-repeat: repeat-y;
+            background-size: 1px 10px;
+            bottom: 103%;
+            height: 19.75vh;
+            right: 50%;
+          }
+          // &::before {
+          //   display: block;
+          // }
+        }
+      }
+      &:nth-child(2) {
+        .imgWrapper {
+          &::before {
+            left: auto;
+            right: 50%;
+            display: block;
+          }
+        }
+      }
+      &:nth-child(1) {
+        .imgWrapper {
+          &::before {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .personalisedCommunication {
+    padding: 2em;
+
+    .heading_container {
+      margin-block: 3em;
+
+      .section_heading {
+        line-height: 1.5em;
+      }
+    }
+
+    .uploadBox {
+      max-width: 9em;
+    }
+
+    .stepsContainer {
+      // row-gap: 4em;
+      justify-content: space-around;
+    }
+
+    .dataBox {
+      // width: 100%;
+      // max-width: 15em;
+      text-align: center;
+    }
+
+    .imgWrapper {
+      max-width: 15em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .personalisedCommunication {
+    padding: 10.7em 1.5em 7.6em;
+    .interactDxContainer {
+      padding: 0;
+      .upload_container {
+        .uploadBox {
+          min-height: 12.571em;
+          font-size: 1.8em;
+          line-height: 1.445;
+        }
+        &:nth-child(3n + 1) {
+          margin-right: 1em;
+        }
+        &:nth-child(3n + 3) {
+          margin-left: 1em;
+        }
+      }
+    }
+    .dataBox {
+     
+      &:nth-child(2n + 2) {
+        padding-left: 1em;
+      }
+      &:nth-child(2n + 1) {
+        padding-right: 1em;
+      }
+      .imgWrapper {
+        max-width: 11.2em;
+      }
+    }
+    .circleText {
+      img {
+        max-width: 3.5em;
+      }
+    }
+
+   
+  }
+}

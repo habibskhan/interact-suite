@@ -1,0 +1,152 @@
+.centralisedHub {
+  // margin-top: 2em;
+
+  .sectionTitle {
+    font-size: 4.125em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .highlight {
+    color: #ff6600;
+  }
+
+  .forbesQuote {
+    text-align: center;
+    font-size: 1.8em;
+    padding: 0 4em;
+    color: #181818;
+    max-width: 80%;
+    margin: 2em auto;
+  }
+
+  .communicationModel {
+    color: white;
+    margin-top: 3.75em;
+  }
+
+  .main {
+    // background: transparent url(../../../assets/customer-model-bg-1.png)
+    //   no-repeat;
+    // background-size: 100% 100%;
+    background: #0B1865;
+    .modelContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
+      padding: 8.75em 1.5em 6.25em 16.1875em;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+    }
+    .modelContainer2 {
+      padding: 8.75em 10em;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .centralisedHub {
+    .main {
+      .modelContainer {
+        padding: 8.75em 1.5em 6.25em 10em;
+      }
+      .modelContainer2 {
+        padding: 8.75em 10em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .centralisedHub {
+    .main {
+      .modelContainer {
+        padding: 8.75em 1.5em 6.25em 5em;
+      }
+      .modelContainer2 {
+        padding: 8.75em 10em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1194px) {
+  .centralisedHub {
+    .main {
+      .modelContainer2 {
+        padding: 8.75em 5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .centralisedHub {
+    .main {
+      .modelContainer {
+        padding: 4em 2em;
+      }
+      .modelContainer2 {
+        padding: 8.75em 5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .centralisedHub {
+    // margin-top: 4em;
+
+    // .heading_container {
+    //   width: 80%;
+    // }
+
+    .forbesQuote {
+      padding: 1em;
+      margin: 0;
+      text-align: left;
+      max-width: 100%;
+    }
+
+    .communicationModel {
+      margin-top: 2em;
+    }
+
+    .main {
+      .modelContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+        flex-wrap: nowrap;
+        width: 100%;
+        // overflow-x: scroll;
+      }
+      .modelContainer2 {
+        padding: 8.75em 1.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .centralisedHub {
+    .main {
+      .modelContainer {
+        padding: 4em 1.5em;
+      }
+      .modelContainer2 {
+        padding: 4em 1.5em;
+      }
+     
+    }
+    .orange_heading {
+      display: block;
+    }
+    .communicationModel {
+      margin-top: 3em;
+    }
+  }
+}

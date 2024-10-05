@@ -1,0 +1,217 @@
+.flowRow {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1em;
+}
+
+.flowDiagramItem {
+  min-width: 200px;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+}
+
+.flowDiagramIcon {
+  // width: 120px;
+  // height: 120px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 32px;
+  padding: 5px;
+}
+
+.flowDiagramLabel {
+  font-size: 1.5em;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 0.25em;
+}
+
+.flowDiagramSubLabel {
+  font-size: 1.375em;
+  color: #ccc;
+}
+
+.flowDiagramArrow {
+  justify-self: center; /* Centers the arrow */
+  font-size: 3em;
+}
+
+.flowDiagramUsers {
+  min-width: 180px;
+  // margin: 0 auto;
+  margin-left: 4em;
+  opacity: 0.5;
+}
+
+.flowDiagramUsersImage {
+  width: 100%;
+  max-width: 6.875em;
+  // height: 8em;
+}
+
+.flowDiagramExtraInfo {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: #ccc;
+}
+.flowicon {
+  // width: 2.5em;
+  // height: 2.5em;
+  max-width: 3.75em;
+  height: 3.75em;
+  // background-color: #3a3e69;
+  border-radius: 50%;
+  // height: 2em;
+}
+/* Color-specific styling */
+.flowDiagram--cyan .flowDiagramIcon {
+  // background: url(../../../assets/blue-glow-circle.png);
+  width: 100%;
+  margin: 0 auto;
+  width: 4.6875em;
+  height: 4.6875em;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  position: relative;
+ 
+}
+
+.flowDiagram--blue .flowDiagramIcon {
+  // background: url(../../../assets/blue-glow-circle.png);
+  width: 100%;
+  margin: 0 auto;
+  width: 4.6875em;
+  height: 4.6875em;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  position: relative;
+  &::before {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    content: "";
+    height: 3.25em;
+    width: 3.25em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.flowDiagram--orange .flowDiagramIcon {
+  // background: url(../../../assets/blue-glow-circle.png);
+  width: 100%;
+  margin: 0 auto;
+  width: 4.6875em;
+  height: 4.6875em;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  position: relative;
+  &::before {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    content: "";
+    height: 3.25em;
+    width: 3.25em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+.flowDiagram--purple .flowDiagramIcon {
+  // background: url(../../../assets/blue-glow-circle.png);
+  width: 100%;
+  margin: 0 auto;
+  width: 4.6875em;
+  height: 4.6875em;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  position: relative;
+  &::before {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    content: "";
+    height: 3.25em;
+    width: 3.25em;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1440px) {
+  .flowDiagramItem {
+    min-width: 150px;
+  }
+  .flowDiagram--cyan .flowDiagramIcon,
+  .flowDiagram--blue .flowDiagramIcon,
+  .flowDiagram--orange .flowDiagramIcon,
+  .flowDiagram--purple .flowDiagramIcon {
+    width: 3.75em;
+    height: 3.75em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flowDiagram--purple .flowDiagramIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .flowDiagram--cyan .flowDiagramIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .flowDiagram--orange .flowDiagramIcon {
+    width: 100px;
+    height: 100px;
+  }
+  .flowDiagram--blue .flowDiagramIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .flowicon {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .flowRow {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1em;
+  }
+
+  /* Ensure the grid items have a consistent size */
+  .flowDiagramItem {
+    min-width: 120px;
+  }
+}
