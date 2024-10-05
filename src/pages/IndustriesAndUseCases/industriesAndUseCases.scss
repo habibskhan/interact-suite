@@ -1,0 +1,330 @@
+@import "../../styles/common.scss";
+
+.usecases_sec2 {
+  padding: 7.5em 0 0;
+  .cardbox_sec {
+    .cardbox_row {
+      width: 100%;
+      max-width: 86%;
+      column-gap: 3.25em;
+      padding-top: 1em;
+    }
+    .cardbox_col {
+      //   max-width: 30.743%;
+      max-width: calc(33.333% - 2.191em);
+    }
+    .box {
+      min-height: 100%;
+      padding: 5em 1.25em 4.5625em;
+      .img_wrapper {
+        max-width: 6.0625em;
+        height: 6.0625em;
+      }
+      .card_img {
+        max-width: 4em;
+      }
+      .card_text {
+        color: #181818;
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.usecases_sec3 {
+  background-color: #101b66;
+  position: relative;
+  margin-top: 8.75em;
+  padding: 6.835em 0 7.96em;
+  overflow-x: clip;
+  .right_wave {
+    top: initial;
+    bottom: -14em;
+    right: -16.5em;
+    z-index: -4;
+  }
+  &::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.057);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .bg_img {
+    z-index: -2;
+  }
+  .section_heading {
+    color: #ffffff;
+  }
+}
+
+.usecases_sec4 {
+  padding: 8.75em 0 0;
+  position: relative;
+  overflow: hidden;
+  .section_desc32 {
+    margin-top: 1.0625em;
+  }
+  .cloud_slider {
+    overflow: hidden;
+    background-color: #efefef;
+    margin-top: 5em;
+    .swiper-wrapper {
+      align-items: center;
+    }
+    .swiper-slide {
+      border-right: 1px solid #18181833;
+      padding: 3.907em 0;
+    }
+    .leader_logo {
+      display: block;
+      max-width: 21em;
+      margin: 0 auto;
+    }
+  }
+}
+
+.usecases_sec5 {
+  padding: 8.75em 0 0;
+  position: relative;
+  overflow: hidden;
+  .left_wave {
+    top: 1.7em;
+    left: -17em;
+    transform: rotate3d(0, 180, 0, 180deg);
+  }
+  .videoaudio_sec {
+    .vidaud_row {
+      max-width: 100%;
+      margin-bottom: -9em;
+      .content_box {
+        .desc {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.usecases_sec6 {
+  padding: 8.75em 0 6.25em;
+  position: relative;
+  overflow: hidden;
+  .right_wave {
+    top: 1.5em;
+  }
+  .quotes_sec_container {
+    .quote_col {
+      &:nth-child(2) .quote_box {
+        padding: 4.5em 3.75em 8.125em 7.25em;
+      }
+      &:nth-child(3) .quote_box {
+        padding: 4.5em 6em 8.125em 7.25em;
+      }
+      .quote_box {
+        padding: 4.5em 4.225em 8.125em 6.6188em;
+        .quote_heading {
+          margin: 0.5292em 0 1.3334em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1194px) {
+  .usecases_sec6 {
+    .quotes_sec_container {
+      .quote_col {
+        &:nth-child(2) .quote_box {
+          padding: 4.5em 3em 7.5em 6.25em;
+        }
+        &:nth-child(3) .quote_box {
+          padding: 4.5em 5em 7.5em 6.75em;
+        }
+        .quote_box {
+          padding: 4.5em 4em 7.5em 6em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .usecases_sec2 {
+    .cardbox_sec {
+      .cardbox_row {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .usecases_sec3 {
+    // padding: 6.835em 0 15em;
+    .right_wave {
+      bottom: -13em;
+    }
+    .section_heading {
+      text-align: center;
+    }
+    .scroll_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: fit-content;
+      margin: 4.2em 1.5em 0 auto;
+      .scroll_arrows {
+        display: flex;
+        margin-bottom: 1em;
+      }
+      .scroll_left,
+      .scroll_right {
+        width: 100%;
+        max-width: 3.7em;
+      }
+      .scroll_left {
+        transform: rotate(180deg);
+        margin-right: 1.25em;
+      }
+      .scroll_text {
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: 300;
+        letter-spacing: 0px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .usecases_sec5 {
+    .left_wave {
+      top: -4.5em;
+      left: -25em;
+    }
+    .videoaudio_sec {
+      .vidaud_row {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .usecases_sec6 {
+    .right_wave {
+      top: -5.5em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .usecases_sec2 {
+    padding: 6em 0 0;
+    .section_heading {
+      text-align: center;
+    }
+    .cardbox_sec {
+      .cardbox_row {
+        column-gap: 0;
+        padding-top: 1.6em;
+      }
+      .cardbox_col {
+        max-width: 100%;
+        .card_img {
+          max-width: 3.8em;
+        }
+      }
+      .box {
+        padding: 4em 1.25em 4.342em;
+        .card_text {
+          font-size: 1.4em;
+          letter-spacing: 0px;
+          line-height: 1.4285;
+        }
+      }
+    }
+  }
+
+  .usecases_sec3 {
+    padding: 4.8em 0 4.4em;
+    margin-top: 6em;
+    .right_wave {
+      bottom: -9em;
+      right: -11em;
+    }
+    .section_heading {
+      .orange_heading {
+        display: block;
+      }
+    }
+    .across_ind {
+      .across_row {
+        margin-left: -1.5em;
+        .data_box {
+          .desc {
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .usecases_sec4 {
+    padding: 6em 0 0;
+    .cloud_slider {
+      margin-top: 2.925em;
+      .leader_logo {
+        max-width: 10em;
+      }
+      .alibaba_logo {
+        max-width: 14em;
+      }
+      .swiper-slide {
+        padding: 3.565em 0;
+        max-height: 10em;
+      }
+    }
+  }
+
+  .usecases_sec5 {
+    padding: 6em 0 0;
+    .left_wave {
+      top: -3em;
+      left: -17.5em;
+    }
+  }
+
+  .usecases_sec6 {
+    padding: 6em 0 6em;
+    .right_wave {
+      top: -1em;
+      right: -19.5em;
+    }
+    .section_heading {
+      text-align: center;
+    }
+    .quotes_sec_container {
+      .quote_col {
+        &:nth-child(2) .quote_box {
+          padding: 4em 4em 6.2em 6.5em;
+        }
+        &:nth-child(3) .quote_box {
+          padding: 4em 4em 5.9em 6.5em;
+        }
+        .quote_box {
+          padding: 4em 4em 4.4em 6.5em;
+        }
+      }
+    }
+  }
+}

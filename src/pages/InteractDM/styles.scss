@@ -1,0 +1,204 @@
+@import '../../styles/variables';
+
+.dm-home {
+  .hero {
+    // background-color: $primary-color;
+    background: url(../../assets/dm-banner.png) no-repeat center;
+    background-size: cover;
+    padding: 4em 2em;
+    text-align: left;
+    height: 40.625em;
+    display: grid;
+    place-items: center;
+
+    h1 {
+      font-size: 7em;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .digital-marketing {
+    padding: 4em 8em;
+    background-color: white;
+    color: black;
+    text-align: left;
+
+    .section_heading {
+      margin-bottom: 1em;
+      text-align: left;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      p {
+        font-size: 1.5em;
+      }
+    }
+
+    .boldText {
+      font-weight: 600;
+    }
+  }
+
+  .cx-exp {
+    padding: 7.5em 16.343em 0;
+  }
+
+  .dm_sec3 {
+    padding: 8.75em 0 0;
+  }
+
+  .dm_sec4 {
+    padding: 8.75em 0 0;
+  }
+
+  .dm_sec5 {
+    padding: 5.1875em 0 0;
+  }
+
+  .dm_sec4,
+  .dm_sec7 {
+    position: relative;
+
+    .left_wave {
+      left: -25em;
+      top: -2em;
+      z-index: -1;
+      transform: rotate3d(0, 180, 0, 180deg);
+    }
+
+    // .leftWave {
+    //   position: absolute;
+    //   right: 0;
+    //   top: -8em;
+    //   transform: rotate(30deg);
+    //   left: -30em;
+    //   scale: -1;
+    //   width: 35%;
+    // }
+
+    @media (max-width: 1024px) {
+      .left_wave {
+        top: -7em;
+        left: -23em;
+      }
+    }
+    @media (max-width: 425px) {
+      .left_wave {
+        left: -15em;
+        top: -5em;
+        rotate: -15deg;
+        width: 70%;
+      }
+    }
+  }
+
+  .dm_sec5,
+  .dm_sec8 {
+    position: relative;
+
+    .right_wave {
+      top: -5em;
+      right: -30em;
+    }
+
+    @media (max-width: 1024px) {
+      .rightWave {
+        right: -25em;
+        top: -5em;
+      }
+    }
+
+    @media (max-width: 425px) {
+      .rightWave {
+        right: -12em;
+        top: -1em;
+        width: 60%;
+      }
+    }
+  }
+
+  .simplifiedProcess {
+    padding: 2rem;
+
+    h2 {
+      color: $secondary-color;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .marketing-service {
+    margin-bottom: 8em;
+
+    .heading {
+      .heading_container {
+        max-width: 52em;
+        margin: 0 auto;
+      }
+
+      .desc {
+        font-size: 2em;
+        max-width: calc(100vw - 12em);
+        text-align: center;
+        color: #181818;
+        margin: 1em auto 2.375em;
+      }
+
+      @media (max-width: 1536px) {
+        .desc {
+          max-width: calc(100vw - 22em);
+        }
+      }
+      @media (max-width: 1024px) {
+        .heading_container {
+          max-width: 100%;
+        }
+        .desc {
+          max-width: 100%;
+          padding-inline: 5em;
+        }
+      }
+    }
+
+    .client_journey {
+      .content_wrapper {
+        .sub_title {
+          font-size: 2.375em;
+        }
+        .desc_wrapper {
+          .section_desc {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dm-home {
+    .digital-marketing {
+      padding: 2em;
+
+      .my_container {
+        padding: 0;
+      }
+    }
+
+    .marketing-service {
+      .heading {
+        .desc {
+          text-align: left;
+          padding: 1em;
+          font-size: 1.8em;
+          margin: 0em auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../styles/common.scss';
+
+
+.pp_banner {
+    position: relative;
+
+    .wave_img {
+        width: 100%;
+        max-width: 40%;
+        position: absolute;
+        right: 0;
+        bottom: -12.5%;
+    }
+}
+
+.pp_sec1 {
+    background: $color-FFFFFF;
+    padding: 7.5em 0;
+
+    .my_container {
+        max-width: 100em;
+    }
+
+    .section_heading {
+        padding: 0 0 0.485em;
+    }
+
+    .pp_desc {
+        @include textStyles(1.5em, 1.5em, 0);
+        padding: 0 0 1.5em;
+
+        &:last-child {
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/common.scss';
+
+
+.faq_banner {
+    position: relative;
+
+    .wave_img {
+        width: 100%;
+        max-width: 40%;
+        position: absolute;
+        right: 0;
+        bottom: -12.5%;
+    }
+}
+
+.faq_sec1 {
+    background: $color-FFFFFF;
+    padding: 7.5em 0 6.25em;
+
+    .my_container {
+        max-width: 90em;
+    }
+
+    .section_heading {
+        text-align: center;
+    }
+
+    .accordion_container {
+        padding: 3.75em 0 0;
+    }
+}
+
+.animated_video_sec {
+    background: #0B1865;
+
+    #vid,
+    .animated-video-0,
+    .animated-video-1 {
+        max-width: 50%;
+    }
+}
+
+.wave_sec {
+    width: 100%;
+}

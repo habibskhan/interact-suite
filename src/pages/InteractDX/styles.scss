@@ -1,0 +1,181 @@
+@import "../../styles/variables";
+@import "../../styles/common.scss";
+
+.home {
+  .hero {
+    background: url(../../assets/hero.png) no-repeat center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    text-align: center;
+    height: 40.625em;
+    display: grid;
+    place-items: center;
+
+    h1 {
+      font-size: 7em;
+      color: white;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    .techno {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      height: 40.625em;
+      justify-content: space-between;
+      overflow: hidden;
+
+      img {
+        height: 20em;
+      }
+
+      .left {
+        transform: translate(-50%, 100%);
+      }
+      .right {
+        transform: translate(50%, 0%);
+      }
+    }
+  }
+
+  .customerCommunication {
+    // padding: 4rem 8rem;
+    padding: 7.5em 14.75em 0;
+    text-align: left;
+
+    .heading_container {
+      margin-top: 0em;
+    }
+
+    .section_heading {
+      text-align: left;
+    }
+
+    .content_wrapper {
+      margin-top: 2em;
+      // display: flex;
+      // flex-direction: column;
+      // gap: 2em;
+
+      // p {
+      //   font-size: 1.5em;
+      // }
+
+      .section_desc {
+        margin-bottom: 1em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      // .boldText {
+      //   font-weight: 600;
+      // }
+    }
+  }
+
+  .personalised_wrapper {
+    padding: 8.75em 0 0;
+  }
+
+  .dx_sec1 {
+    // padding: 8.75em 0 0;
+    .cardbox_sec {
+      .box {
+        .img_wrapper {
+          max-width: 5.5625em;
+          height: 5.5625em;
+        }
+      }
+    }
+  }
+
+  .dx_sec3 {
+    padding: 8.75em 0 0;
+    position: relative;
+    overflow-x: clip;
+    .right_wave {
+      right: -22em;
+      top: -1.5em;
+      z-index: -2;
+    }
+  }
+
+  .dx_sec4 {
+    padding: 8.75em 0 0;
+    position: relative;
+  }
+
+  .dx_sec5 {
+    padding: 8.75em 0 0;
+    position: relative;
+    overflow-x: clip;
+    .right_wave {
+      top: -5.25em;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .home {
+    .customerCommunication {
+      padding: 7.5em 0 0;
+    }
+
+    .dx_sec3 {
+      .right_wave {
+        top: -4em;
+      }
+    }
+
+    .dx_sec5 {
+      .right_wave {
+        top: -4em;
+      }
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+//   .home {
+//     .customerCommunication {
+//       padding: 2em;
+//     }
+//   }
+// }
+
+@media (max-width: 767px) {
+  .home {
+    .customerCommunication {
+      padding: 6em 0 0;
+    }
+
+    .personalised_wrapper {
+      padding: 6em 0 0;
+      .my_container {
+        padding: 0;
+      }
+      .personalisedCommunication {
+        padding: 10.7em 1.5em 7.6em;
+      }
+    }
+
+    .dx_sec3 {
+      padding: 6em 0 0;
+      .right_wave {
+        right: -21em;
+        top: -3.25em;
+      }
+    }
+
+    .dx_sec4 {
+      padding: 6em 0 0;
+    }
+
+    .dx_sec5 {
+      padding: 6em 0 0;
+    }
+  }
+}

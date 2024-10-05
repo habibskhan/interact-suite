@@ -1,0 +1,142 @@
+@import "../../styles/common.scss";
+
+.partners_sec2 {
+  padding: 5.907em 0 0;
+}
+.error_text {
+  color: red;
+  font-style: italic;
+}
+.success_text {
+  color: green;
+  font-style: italic;
+}
+.partners_sec3 {
+  margin-top: 8.75em;
+  padding: 10.25em 0 10.375em;
+  position: relative;
+  .cardbox_sec {
+    .cardbox_row {
+      width: 100%;
+      max-width: 86%;
+      column-gap: 3.25em;
+      padding-top: 1em;
+      justify-content: center;
+    }
+    .cardbox_col {
+      max-width: calc(33.333% - 2.191em);
+    }
+    .box {
+      // border: 1px solid #18181866;
+      background: linear-gradient(
+        114deg,
+        rgba(255, 255, 255, 0.26),
+        rgba(255, 255, 255, 0.17)
+      );
+      min-height: 100%;
+      padding: 5em 1.25em 4.5625em;
+      .img_wrapper {
+        max-width: 6.0625em;
+        height: 6.0625em;
+      }
+      .card_img {
+        max-width: 4em;
+      }
+      .card_text {
+        color: #ffffff;
+        font-size: 1.5em;
+        font-weight: 500;
+        letter-spacing: 0px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.partners_sec4 {
+  padding: 8.75em 0 6.25em;
+  .form_wrapper {
+    .form_row {
+      padding: 0.0469em 0.835em 4.9844em;
+    }
+    .form_col {
+      &:last-child {
+        padding: 0;
+      }
+    }
+    .cta_wrapper {
+      .comm_cta_sec1 {
+        .cta_link {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .partners_sec3 {
+    .cardbox_sec {
+      .cardbox_row {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .partners_sec4 {
+    .form_wrapper {
+      .form_row {
+        padding: 0.0469em 0 4.9844em;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .partners_sec2 {
+    padding: 6em 0 0;
+    .section_heading {
+      text-align: center;
+    }
+    .orange_heading {
+      display: block;
+    }
+  }
+
+  .partners_sec3 {
+    padding: 6em 0 6.2em;
+    margin-top: 6em;
+    .cardbox_sec {
+      .cardbox_row {
+        column-gap: 0;
+        padding-top: 1.6em;
+      }
+      .cardbox_col {
+        max-width: 100%;
+        .card_img {
+          max-width: 3.4em;
+        }
+      }
+      .box {
+        padding: 4em 1.25em 4.342em;
+        .card_text {
+          font-size: 1.4em;
+          letter-spacing: 0px;
+          line-height: 1.4285;
+        }
+      }
+    }
+  }
+
+  .partners_sec4 {
+    padding: 6em 0 6em;
+    .section_heading {
+      text-align: center;
+    }
+    .form_wrapper {
+      .form_row {
+        padding: 0 0 4em;
+      }
+    }
+  }
+}
