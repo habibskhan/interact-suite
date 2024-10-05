@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+
+https://www.chennaisingams.com/sitemap.xml
