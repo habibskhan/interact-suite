@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.939" height="69.939" viewBox="0 0 69.939 69.939">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.05" y1="0.141" x2="0.276" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8000"/>
+      <stop offset="1" stop-color="#0119af"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="download_icon" data-name="download icon" transform="translate(-1723 -48.061)">
+    <circle id="Ellipse_149" data-name="Ellipse 149" cx="34.97" cy="34.97" r="34.97" transform="translate(1723 48.061)" fill="url(#linear-gradient)"/>
+    <path id="Path_5680" data-name="Path 5680" d="M226.65-725.734l-6.706-6.705.948-.911,5.1,5.066V-748h1.312v19.716l5.1-5.066.948.911ZM215.061-718.7a2.965,2.965,0,0,1-2.183-.878,2.965,2.965,0,0,1-.878-2.183v-5.175h1.312v5.175a1.672,1.672,0,0,0,.547,1.2,1.672,1.672,0,0,0,1.2.547h23.178a1.672,1.672,0,0,0,1.2-.547,1.672,1.672,0,0,0,.547-1.2v-5.175H241.3v5.175a2.965,2.965,0,0,1-.878,2.183,2.965,2.965,0,0,1-2.183.878Z" transform="translate(1531.85 813.85)" fill="#fff"/>
+  </g>
+</svg>
